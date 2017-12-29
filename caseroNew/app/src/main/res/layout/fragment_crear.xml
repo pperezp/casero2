@@ -1,13 +1,100 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="casero.cl.casero2.CrearFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CREAR" />
+    <Spinner
+        android:id="@+id/spiSector"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/sector_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/txtNomCli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spiSector"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spiSector"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiSector" />
+
+    <EditText
+        android:id="@+id/txtDire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNomCli"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtNomCli"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomCli" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDire"
+        android:layout_below="@+id/txtDire"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#3f51b5"
+        android:text="Crear cliente"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDire" />
+
+    <Button
+        android:id="@+id/btnVolVis"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDire"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#f44336"
+        android:text="Volver"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCantidad"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@+id/btnVolVis"
+        android:text="Clientes: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolVis"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
