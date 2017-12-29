@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/ic_buscar"
+            android:title="Buscar cliente" />
+        <item
+            android:id="@+id/nav_crear"
+            android:icon="@drawable/ic_crear"
+            android:title="Crear cliente" />
+    </group>
+
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_estadistica"
+                android:icon="@drawable/ic_estadistica"
+                android:title="Estadística" />
+            <item
+                android:id="@+id/nav_grafico"
+                android:icon="@drawable/ic_grafico"
+                android:title="Gráfico" />
+
+        </menu>
+    </item>
+
+</menu>
