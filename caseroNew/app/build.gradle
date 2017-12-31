@@ -33,4 +33,15 @@ dependencies {
 dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }
-// GRÁFICO
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    implementation 'com.android.support:support-v4:26.+'
+}
+dependencies {
+    implementation 'com.android.support:support-v4:26.+'
+}// GRÁFICO
