@@ -22,6 +22,14 @@ allprojects {
     }
 }
 
+// GRÁFICO
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+// GRÁFICO
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
